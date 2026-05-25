@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Card App</title> <!--the title that appears in the browser-->
+  <link rel="stylesheet" href="style.css" /> <!--link to the CSS file-->
+</head>
+<body>
+  <header>
+    <h1>Portfolio Card Generator</h1>
+  </header>
+
+  <main>
+    <!-- Form Section (this is where the user inputs their information) -->
+    <form id="userForm">
+      <input type="text" id="name" placeholder="Your Name" />
+      <input type="text" id="title" placeholder="Your Title" />
+      <textarea id="bio" placeholder="Short Bio"></textarea>
+      <input type="text" id="skills" placeholder="Skills (comma separated)" />
+      <input type="url" id="linkedin" placeholder="LinkedIn URL" />
+      <input type="url" id="Instagram" placeholder="Instagram URL" />
+      <input type="url" id="GitHub" placeholder="GitHub URL" />
+      <button type="reset">Reset</button>
+    </form>
+
+    <!-- Card Preview Section(this is what the user sees) -->
+    <section class="card-preview">
+      <h2 id="cardName">Your Name</h2>
+      <h4 id="cardTitle">Your Title</h4>
+      <p id="cardBio">Short Bio</p>
+      <ul id="cardSkills"></ul>
+      <a id="cardLinkedin" href="#">LinkedIn</a>
+      <a id="cardInstagram" href="#">Instagram</a>
+      <a id="cardGitHub" href="#">GitHub</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script><!--link to the JavaScript file-->
+</body>
+</html>
