@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Card App</title> <!--the title that appears in the browser-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" /> <!--link to the CSS file-->
 </head>
 <body>
@@ -21,6 +22,7 @@
       <input type="url" id="linkedin" placeholder="LinkedIn URL" />
       <input type="url" id="Instagram" placeholder="Instagram URL" />
       <input type="url" id="GitHub" placeholder="GitHub URL" />
+      <button type="submit">Generate Card</button>
       <button type="reset">Reset</button>
     </form>
 
@@ -30,9 +32,9 @@
       <h4 id="cardTitle">Your Title</h4>
       <p id="cardBio">Short Bio</p>
       <ul id="cardSkills"></ul>
-      <a id="cardLinkedin" href="#">LinkedIn</a>
-      <a id="cardInstagram" href="#">Instagram</a>
-      <a id="cardGitHub" href="#">GitHub</a>
+      <a id="cardLinkedin" href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i>LinkedIn</a>
+      <a id="cardInstagram" href="#"><i class="fab fa-instagram" aria-hidden="true"></i>Instagram</a>
+      <a id="cardGitHub" href="#"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a>
     </section>
   </main>
 

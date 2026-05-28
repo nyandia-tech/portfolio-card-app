@@ -1,0 +1,132 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f4f4;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Form Styling */
+form {
+  flex: 1;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background: #0077cc;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #005fa3;
+}
+
+/* Card Preview */
+.card-preview {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background 0.5s ease, opacity 0.5s ease;
+  opacity: 0;              /* hidden by default */
+  transform: scale(0.95);  /* subtle shrink before showing */
+}
+
+.card-preview.show {
+  opacity: 1;
+  transform: scale(1);     /* smooth fade-in + scale */
+}
+
+.card-preview:hover {
+  transform: scale(1.03);
+}
+
+/* Skills Tags */
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.skills-tags div {
+  background: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.skills-tags div:hover {
+  background: #0077cc;
+  color: white;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #0077cc;
+  font-size: 1.8rem; /* icon size */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #005fa3;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+/* Themes */
+.theme-light {
+  background: #ffffff;
+  color: #333;
+}
+
+.theme-dark {
+  background: #222;
+  color: #f4f4f4;
+}
+
+.theme-gradient {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
