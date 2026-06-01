@@ -59,6 +59,18 @@ Begin styling the form and card preview for responsiveness and theme support.
 - Implement **manual theme switching** (buttons/toggles for light, dark, gradient).
 - Integrate **local storage** to save form data and persist the card after page refresh.
 
+# Deployment
+The Portfolio Card Generator web app has been successfully deployed on **Netlify**.  
+I tested the live site in both **Google Chrome** and **Mozilla Firefox**, and all core features (form input, card generation, theme switching, reset functionality) are working as expected.
 
+### 🔗 Live Demo
+[View the project here](https://6a1de79debba55b9b31975cd--neon-pothos-135a8f.netlify.app/)
+
+---
+
+## ✅ Verification
+- **Cross-browser testing**: Confirmed functionality in Chrome and Firefox.
+- **Responsive design**: Layout adapts well to different screen sizes.
+- **Theme switching**: Light, Dark, and Gradient themes display correctly.
 
                                                                                                                                                                                                                                                                                                                                                                                                                                      
