@@ -20,7 +20,8 @@ header {
 }
 
 main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 320px;
   gap: 40px;
   width: 100%;
   max-width: 1000px;
@@ -158,6 +159,7 @@ form button:hover {
   gap: 10px;
   align-items: center;
   margin: 15px 0 25px;
+  grid-column: 1 / -1;
 }
 
 .theme-controls span {
